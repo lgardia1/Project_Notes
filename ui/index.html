@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Notes</h1>
+        <nav>
+          <ul>
+            <li id="latest">Latest</li>
+            <li id="normal">Normal</li>
+            <li id="critical">Critical</li>
+            <li class="filter">
+              <input type="month" id="monthInput" name="monthInput" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="notes-container">
+          <section class="note-card normal">
+            <div class="title">
+              <h3><img src="asset/img/note.png" alt="alert" />Note Title</h3>
+              <h3>28/10/2024</h3>
+            </div>
+            <div class="text">
+              <p>asdau7ñkkpkpkpkpgasdaipygiygksdasdasd</p>
+            </div>
+            <div class="footer-card">
+              <p id="Delete">Delete</p>
+              <p>|</p>
+              <p id="Edit">Edit</p>
+            </div>
+          </section>
+        
+        </div>
+      </div>
+        <!-- Formulario para añadir nuevas notas -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a Note</h2>
+            <form id="noteForm">
+              <label for="noteType">Type:</label>
+              <select id="noteType" name="noteType">
+                <option value="normal">Normal</option>
+                <option value="critical">Critical</option>
+              </select>
+              <label for="noteContent">Content:</label>
+              <textarea id="noteContent" name="noteContent" required></textarea>
+              <label for="noteDate">Date:</label>
+              <input type="date" id="noteDate" name="noteDate" required />
+              <button type="submit">Add Note</button>
+            </form>
+          </div>
+        </div>
+      </main>
+  
+
+    <script type="module" src="asset/script/script.js"></script>
+  </body>
+</html>
